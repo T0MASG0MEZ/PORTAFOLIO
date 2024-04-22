@@ -1,0 +1,23 @@
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .caja-elementos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: .5rem;
+        padding: 1rem;
+
+        .elementos-navbar {
+
+
+            a {
+                @include text (1.6rem);
+                color: white;
+            }
+        }
+    }
+
+}

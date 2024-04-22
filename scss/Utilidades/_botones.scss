@@ -1,0 +1,8 @@
+button {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    @include text (1.4rem);
+    background-color: $color-3;
+    color: white;
+    border-color: $color-2;
+}

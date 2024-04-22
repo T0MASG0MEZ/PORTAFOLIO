@@ -1,0 +1,56 @@
+.presentacion {
+    max-width: 1440px;
+    margin: 4rem auto;
+
+    .presentacion-caja {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 1 1;
+
+        .presentacion-texto {
+            padding: 4rem;
+            color: white;
+            .presentacion-titulos {
+
+                h1 {
+                    @include text (6rem);
+                    span {
+                        color: $color-5;
+                    }
+                }
+                h2 {
+                    @include text (3rem);
+                    opacity: .6;
+                }
+            }
+            .presentacion-parrafos {
+
+                p {
+                    @include text (3rem);
+                    span {
+                        color: $color-5;
+                    }
+                }
+            }
+        }
+        .presentacion-imagen {
+            padding: 5rem;
+            .caja-img {
+                width: 200px;
+            }
+        }
+    }
+    .botones-redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .caja-botones {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+    }
+}

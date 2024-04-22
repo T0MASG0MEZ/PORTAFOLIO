@@ -1,0 +1,36 @@
+.habilidades {
+    max-width: 1440px;
+    margin: 2rem auto;
+
+    .cajas-contenido {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 2rem;
+        padding: 3rem;
+        
+        .caja-habilidades {
+            background-color: $color-4;
+            width: 200px;
+            height: auto;
+            flex-grow: 1;
+            text-align: center;
+
+            .tecnologias {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 3rem;
+                gap: 30px;
+            }
+            h2 {
+                @include text (3rem);
+                color: white;
+                padding: 2rem;
+            }
+        }
+    }
+}

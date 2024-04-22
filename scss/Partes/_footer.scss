@@ -1,0 +1,18 @@
+footer {
+    max-width: 1440px;
+    margin: 3rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    
+    p {
+        @include text (1.4rem);
+        color: white;
+        opacity: .4;
+    }
+    a {
+        @include text (1.4rem);
+        opacity: .8;
+        padding: 0 2rem;
+    }
+}

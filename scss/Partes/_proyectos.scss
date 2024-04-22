@@ -1,0 +1,90 @@
+.proyectos {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .proyectos-titulo {
+        @include text (4rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem;
+        padding: 3rem;
+        color: #ffffff;
+    }
+    .proyectos-1 {
+        background-color: $color-5;
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1;
+        border-radius: 3rem;
+        overflow: hidden;
+        margin: 5rem 0;
+
+        .foto-proyecto {
+
+            img {   
+                max-width: 700px;
+                height: 100%;
+            }
+        }
+        .caja-texto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 700px;
+
+            .textos-proyecto {
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                padding: 5rem;
+                
+                .titulo-proyecto {
+                    
+                    h2 {
+                        @include text (5rem);
+                    }
+                    p {
+                        @include text (1.9rem);
+                        flex-grow: 1;
+    
+                    }
+                }
+                
+                .herramientas {
+                    display: flex;
+                    padding: 2rem 0;
+                    gap: 30px;
+
+                    .caja-herramientas {
+                        display: flex;
+                        padding: 1rem 3rem;
+                        border-radius: 2rem; 
+                        background-color: $color-3;
+
+                        p {
+                            @include text (1.4rem);
+                        }
+                    }
+                }
+
+                .anclajes {
+                    display: flex;
+                    gap: 30px;
+                    padding: 2rem 0;
+                    
+                    .anclajes-box {
+                        display: flex;
+                        padding: 1rem 3rem;
+                        border-radius: 2rem;
+                        background-color: $color-3;
+
+                        a {
+                            @include text(1.4rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
